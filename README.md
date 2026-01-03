@@ -37,7 +37,6 @@ Il met en œuvre une architecture backend réaliste intégrant une API, une base
 ---
 
 ## Structure du projet
-
 ```text
 tp2-docker-compose/
 ├── app/
@@ -49,3 +48,6 @@ tp2-docker-compose/
 ├── .env
 ├── .gitignore
 └── README.md
+```
+## Résultat attendu 
+![Résultat](images/local_host.png)
