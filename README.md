@@ -12,7 +12,7 @@ Il met en œuvre une architecture backend réaliste intégrant une API, une base
 
 ---
 
-## 🧱 Stack technique
+## Stack technique
 
 - Docker
 - Docker Compose
@@ -26,7 +26,7 @@ Il met en œuvre une architecture backend réaliste intégrant une API, une base
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 - API FastAPI exposée sur le port 8000
 - Base de données PostgreSQL avec persistance via volume Docker
@@ -36,7 +36,7 @@ Il met en œuvre une architecture backend réaliste intégrant une API, une base
 
 ---
 
-## 📂 Structure du projet
+## Structure du projet
 
 ```text
 tp2-docker-compose/
@@ -49,3 +49,7 @@ tp2-docker-compose/
 ├── .env
 ├── .gitignore
 └── README.md
+```md
+## Résultat attendu
+
+![Résultat](images/local_host.png)
