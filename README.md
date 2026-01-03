@@ -1,11 +1,11 @@
-# 🚀 TP2 – Multi-Services Deployment with Docker Compose
+# TP2 – Multi-Services Deployment with Docker Compose
 
 > Projet pédagogique – Infrastructure & Orchestration de données  
 > Environnement : WSL (Ubuntu) · VS Code · Docker Compose
 
 ---
 
-## 📌 Présentation
+##  Présentation
 
 Ce projet illustre le déploiement d’une application multi-services à l’aide de Docker Compose.  
 Il met en œuvre une architecture backend réaliste intégrant une API, une base de données relationnelle, un outil d’administration et un service annexe.
