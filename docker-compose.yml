@@ -1,0 +1,49 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./app
+    container_name: tp2_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - tp2_network
+
+  db:
+    image: postgres:15
+    container_name: tp2_db
+    env_file:
+      - .env
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $POSTGRES_USER"]
+      interval: 10s
+      retries: 5
+    networks:
+      - tp2_network
+
+  adminer:
+    image: adminer
+    container_name: tp2_adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - tp2_network
+
+  redis:
+    image: redis:7
+    container_name: tp2_redis
+    networks:
+      - tp2_network
+
+networks:
+  tp2_network:
+
+volumes:
+  db_data:
